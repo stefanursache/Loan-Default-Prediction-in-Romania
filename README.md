@@ -55,13 +55,6 @@ python loan_default_prediction_advanced.py
 
 📊 Model Performance
 
-Model
-
-Accuracy
-
-ROC AUC Score
-
-F1 Score
 
 | Model                  | Accuracy | ROC AUC Score | F1 Score |
 |------------------------|----------|--------------|----------|
