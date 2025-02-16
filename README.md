@@ -1,28 +1,40 @@
-Loan Default Prediction in Romania (Hugging Face AI Model)
-
 📌 Project Overview
 
-This project uses a pre-trained AI model from Hugging Face to predict loan default risk for small businesses in Romania. The model utilizes economic indicators, business financials, and loan details to classify whether a borrower is at risk of defaulting.
+This repository contains two AI-powered loan default prediction models designed for Romanian businesses. The models use real-time economic data, machine learning, and deep learning AI to assess loan risks accurately.
 
-🚀 Features
+1️⃣ Loan Default Prediction (Basic Model)
 
-Uses a Hugging Face Pre-trained Model: Leverages huggingface/tabnet for improved prediction accuracy.
+Uses Random Forest & Gradient Boosting classifiers.
 
-Real Romanian Economic Data: Includes inflation rate, interest rate, GDP growth, and unemployment rate.
+Incorporates real Romanian economic indicators (inflation, interest rates, GDP growth, etc.).
 
-Feature Engineering: Includes Debt-to-Income Ratio and other financial indicators.
+Evaluates feature importance and key financial metrics.
 
-Performance Metrics: Evaluates accuracy and feature importance.
+File: loan_default_prediction_huggingface.py
 
-📂 Dataset
+2️⃣ Loan Default Prediction (Advanced Model)
 
-The dataset should contain:
+Adds Hugging Face TabNet for structured data classification.
 
-Loan Details: Amount, duration, interest rate.
+Implements new financial ratios (Loan-to-Income Ratio, Debt Service Coverage).
 
-Business Financials: Credit score, annual revenue, debt-to-income ratio.
+Supports multi-model evaluation (Random Forest, Gradient Boosting, TabNet).
 
-Economic Factors: Inflation, GDP growth, unemployment rate (fetched via API).
+Includes SHAP analysis for model explainability.
+
+File: loan_default_prediction_advanced.py
+
+📂 Dataset & APIs
+
+This project relies on real-world financial & economic data:
+
+Romanian Economic Data API: Inflation, GDP Growth, Interest Rates.
+
+Banking APIs (PSD2) for financial transactions.
+
+ANAF API for business creditworthiness (Planned integration).
+
+Google Trends API for economic sentiment analysis (Planned integration).
 
 ⚙️ Installation & Setup
 
@@ -35,9 +47,11 @@ Install dependencies:
 
 pip install -r requirements.txt
 
-Run the prediction script:
+Run the prediction scripts:
 
 python loan_default_prediction_huggingface.py
+
+python loan_default_prediction_advanced.py
 
 📊 Model Performance
 
@@ -45,13 +59,37 @@ Model
 
 Accuracy
 
+ROC AUC Score
+
+F1 Score
+
+Random Forest
+
+XX%
+
+XX
+
+XX
+
+Gradient Boosting
+
+XX%
+
+XX
+
+XX
+
 Hugging Face TabNet
 
 XX%
 
+XX
+
+XX
+
 📈 Feature Importance
 
-The most critical factors influencing loan default predictions:
+The key factors influencing loan defaults:
 
 Credit Score
 
@@ -65,15 +103,10 @@ Inflation Rate
 
 🏗️ Future Improvements
 
-Fine-tune the pre-trained model with Romanian-specific data.
-
-Integrate hyperparameter tuning.
-
-Develop a Streamlit dashboard for real-time predictions.
+🔹 Add PSD2 APIs for real banking data.🔹 Deploy as a FastAPI for real-time scoring.🔹 Improve interpretability using SHAP & LIME.🔹 Build an interactive Streamlit dashboard.
 
 📜 License
 
 This project is open-source under the MIT License.
 
-🔗 Contributors: Stefan and OpenAI ChatGPT
-
+🔗 Contributors: Stefan and 
