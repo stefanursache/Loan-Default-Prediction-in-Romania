@@ -63,29 +63,12 @@ ROC AUC Score
 
 F1 Score
 
-Random Forest
+| Model                  | Accuracy | ROC AUC Score | F1 Score |
+|------------------------|----------|--------------|----------|
+| Random Forest         | XX%      | XX           | XX       |
+| Gradient Boosting     | XX%      | XX           | XX       |
+| Hugging Face TabNet   | XX%      | XX           | XX       |
 
-XX%
-
-XX
-
-XX
-
-Gradient Boosting
-
-XX%
-
-XX
-
-XX
-
-Hugging Face TabNet
-
-XX%
-
-XX
-
-XX
 
 📈 Feature Importance
 
