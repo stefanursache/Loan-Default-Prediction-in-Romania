@@ -28,7 +28,7 @@ Economic Factors: Inflation, GDP growth, unemployment rate (fetched via API).
 
 Clone the repository:
 
-git clone https://github.com/your-username/loan-default-romania.git
+git clone https://github.com/stefan.ursache/loan-default-romania.git
 cd loan-default-romania
 
 Install dependencies:
